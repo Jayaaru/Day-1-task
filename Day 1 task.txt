@@ -1,0 +1,49 @@
+
+1.Difference between http1.1 vs http2?
+
+
+HTTP is a top-level application protocol that exchanges information between a client computer and a local or remote web server.
+
+Http/1.1:
+   It was releasd in 1997. In this process, a client sends a text-based request to a server by calling a method like GET or POST. In response, the server sends a resource like an HTML page back to the client.
+
+
+Http/2:
+    It was developed by google to reduce the web page load latency by using compression, multiplexing, and prioritization techniques.Many browsers supported this effort but there has been a significant adoption rate of the protocol since 2015, with especially high rates among new sites.
+
+Differences:
+    Http/1.1 keeps all requests and responses in plain text format, HTTP/2 uses the binary framing layer to encapsulate all messages in binary format, while still maintaining HTTP semantics, such as verbs, methods, and headers.But the application layer still maintain in HTTP format, so application created before http/2 can continue in the new protocol.
+
+  In HTTP/2, the binary framing layer encodes requests/responses and cuts them up into smaller packets of information, greatly increasing the flexibility of data transfer.
+
+  Http/1.1 make use of multiple TCP connections(Multiplexing) to lessen the effect of HOL blocking. HTTP/2 uses a single connection object between two machines.But multiplexing can cause performance issues, so HTTP/2 uses stream priortization.
+
+
+2- Objects and it's internal representation of japvascript.:
+     
+     Objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types,."key:value".         
+   
+                Syntax:       
+                    let object_name = {    
+                        key_name : value,    
+                             ...}
+       Key -string(property name), Value - anything.        
+   
+      These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.An object can be created with figure brackets {…} with an optional list of properties.
+
+Object properties:
+   A JavaScript object is basically a collection of unordered properties. Values associated with a JavaScript object are called its properties. Properties can usually be added, updated, and deleted, excluding read-only properties. 
+
+  Accessing the property of object-
+ 1: We first define an object and name it student and add a few relevant properties.
+ 2: The first method is to access the property by using the dot(.) notation - object.property
+ 3: The second method is by using square brackets - object[property]
+ 4: Lastly, we can store a property name, in the form of a string, in a variable and then use that variable to access the associated property.
+
+ Object Methods-
+  Actions that can be performed on a JavaScript object are called methods.
+
+1.We first define an object, user; and add a couple of properties to it, namely, name and age.
+2.Then we create a new function that throws an alert saying “Hello!”.
+3.We can add this method to the object the same way we add properties to objects.
+4.We then use JavaScript DOM to attach an event listener to an HTML button that in turn triggers the alert when clicked on.
